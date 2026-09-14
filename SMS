@@ -1,7 +1,7 @@
 """ 
 Name: Tushar Bharat Chavan.
 college: ITM Collage,Nanded.
-college Project : Student Management System. 
+college Project : Student Management System(Python,tkinter). 
 roll No : 26
 
 """
@@ -15,13 +15,13 @@ win.geometry("1350x700+0+0")
 win.title("Student Management System")
 
 #win.config(bg="blue")
-title_label = tk.Label(win,text="Student Management System",font=("Arial",30,"bold"),border=12,relief=tk.GROOVE,bg="lightgrey")
+title_label = tk.Label(win,text="Student Management System",font=("TIMES NEW ROMAN",30,"bold"),border=12,relief=tk.GROOVE,bg="lightblue")
 title_label.pack(side=tk.TOP,fill=tk.X)
 
-detail_frame=tk.LabelFrame(win,text="Enter Details",font=("Arial",20),bd=12,relief=tk.GROOVE,bg="lightgrey")
+detail_frame=tk.LabelFrame(win,text="Enter Details",font=("Arial",20),bd=12,relief=tk.GROOVE,bg="lightblue")
 detail_frame.place(x=20,y=90,width=420,height=575)
 
-data_frame=tk.Frame(win,bd=12,bg="lightgrey",relief=tk.GROOVE)
+data_frame=tk.Frame(win,bd=12,bg="lightblue",relief=tk.GROOVE)
 data_frame.place(x=475,y=90,width=810,height=575)
 
 #=========== Variable =======
@@ -43,59 +43,59 @@ search_by=tk.StringVar()
 #==============================
 
 #Entry
-rollno_lbl=tk.Label(detail_frame,text="Roll No",font=("Arial",15),bg="lightgrey")
+rollno_lbl=tk.Label(detail_frame,text="Roll No",font=("TIMES NEW ROMAN",15),bg="lightblue")
 rollno_lbl.grid(row=0,column=0,padx=2,pady=2)
 
-rollno_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=rollno)
+rollno_ent=tk.Entry(detail_frame,bd=7,font=("TIMES NEW ROMAN",15),textvariable=rollno)
 rollno_ent.grid(row=0,column=1,padx=2,pady=2)
 
-name_lbl=tk.Label(detail_frame,text="Name",font=("Arial",15),bg="lightgrey")
+name_lbl=tk.Label(detail_frame,text="Name",font=("TIMES NEW ROMAN",15),bg="lightblue")
 name_lbl.grid(row=1,column=0,padx=2,pady=2)
 
-name_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=name)
+name_ent=tk.Entry(detail_frame,bd=7,font=("TIMES NEW ROMAN",15),textvariable=name)
 name_ent.grid(row=1,column=1,padx=2,pady=2)
 
-class_lbl=tk.Label(detail_frame,text="class",font=("Arial",15),bg="lightgrey")
+class_lbl=tk.Label(detail_frame,text="class",font=("TIMES NEW ROMAN",15),bg="lightblue")
 class_lbl.grid(row=2,column=0,padx=2,pady=2)
 
-class_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=class_var)
+class_ent=tk.Entry(detail_frame,bd=7,font=("TIMES NEW ROMAN",15),textvariable=class_var)
 class_ent.grid(row=2,column=1,padx=2,pady=2)
 
-section_lbl=tk.Label(detail_frame,text="section",font=("Arial",15),bg="lightgrey")
+section_lbl=tk.Label(detail_frame,text="section",font=("TIMES NEW ROMAN",15),bg="lightblue")
 section_lbl.grid(row=3,column=0,padx=2,pady=2)
 
-section_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=section)
+section_ent=tk.Entry(detail_frame,bd=7,font=("TIMES NEW ROMAN",15),textvariable=section)
 section_ent.grid(row=3,column=1,padx=2,pady=2)
 
-contact_lbl=tk.Label(detail_frame,text="Contact",font=("Arial",15),bg="lightgrey")
+contact_lbl=tk.Label(detail_frame,text="Contact",font=("TIMES NEW ROMAN",15),bg="lightblue")
 contact_lbl.grid(row=4,column=0,padx=2,pady=2)
 
-contact_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=contact)
+contact_ent=tk.Entry(detail_frame,bd=7,font=("TIMES NEW ROMAN",15),textvariable=contact)
 contact_ent.grid(row=4,column=1,padx=2,pady=2)
 
-fathername_lbl=tk.Label(detail_frame,text="Father's Name",font=("Arial",15),bg="lightgrey")
+fathername_lbl=tk.Label(detail_frame,text="Father's Name",font=("TIMES NEW ROMAN",15),bg="lightblue")
 fathername_lbl.grid(row=5,column=0,padx=2,pady=2)
 
-fathername_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=fathersnm)
+fathername_ent=tk.Entry(detail_frame,bd=7,font=("ArTIMES NEW ROMANial",15),textvariable=fathersnm)
 fathername_ent.grid(row=5,column=1,padx=2,pady=2)
 
-address_lbl=tk.Label(detail_frame,text="Address",font=("Arial",15),bg="lightgrey")
+address_lbl=tk.Label(detail_frame,text="Address",font=("TIMES NEW ROMAN",15),bg="lightblue")
 address_lbl.grid(row=6,column=0,padx=2,pady=2)
 
-address_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=address)
+address_ent=tk.Entry(detail_frame,bd=7,font=("AriTIMES NEW ROMANal",15),textvariable=address)
 address_ent.grid(row=6,column=1,padx=2,pady=2)
 
-gender_lbl=tk.Label(detail_frame,text="Gender",font=("Arial",15),bg="lightgrey")
+gender_lbl=tk.Label(detail_frame,text="Gender",font=("TIMES NEW ROMAN",15),bg="lightblue")
 gender_lbl.grid(row=7,column=0,padx=2,pady=2)
 
-gender_ent=ttk.Combobox(detail_frame,font=("Arial",15),state="readonly",textvariable=gender)
+gender_ent=ttk.Combobox(detail_frame,font=("TIMES NEW ROMAN",15),state="readonly",textvariable=gender)
 gender_ent['values']=("Male","Female","Others")
 gender_ent.grid(row=7,column=1,padx=2,pady=2)
 
-dob_lbl=tk.Label(detail_frame,text="DOB",font=("Arial",15),bg="lightgrey")
+dob_lbl=tk.Label(detail_frame,text="DOB",font=("TIMES NEW ROMAN",15),bg="lightblue")
 dob_lbl.grid(row=8,column=0,padx=2,pady=2)
 
-dob_ent=tk.Entry(detail_frame,bd=7,font=("Arial",15),textvariable=dob)
+dob_ent=tk.Entry(detail_frame,bd=7,font=("TIMES NEW ROMAN",15),textvariable=dob)
 dob_ent.grid(row=8,column=1,padx=2,pady=2)
 
 #Entry close form
@@ -187,38 +187,38 @@ def update_func():
             
 #=================
 #=========button=====
-btn_frame= tk.Frame(detail_frame,bg="lightgrey",bd=10,relief=tk.GROOVE)
+btn_frame= tk.Frame(detail_frame,bg="lightblue",bd=10,relief=tk.GROOVE)
 btn_frame.place(x=25,y=390,width=340,height=120)
 
-add_btn=tk.Button(btn_frame,bg="lightgrey",text="Add",bd=7,font=("Arial",13),width=15 ,command=add_func)
+add_btn=tk.Button(btn_frame,bg="lightblue",text="Add",bd=7,font=("TIMES NEW ROMAN",13),width=15 ,command=add_func)
 add_btn.grid(row=0,column=0,padx=2,pady=2)
 
-update_btn=tk.Button(btn_frame,bg="lightgrey",text="Update",bd=7,font=("Arial",13),width=15,command=update_func)
+update_btn=tk.Button(btn_frame,bg="lightblue",text="Update",bd=7,font=("TIMES NEW ROMAN",13),width=15,command=update_func)
 update_btn.grid(row=0,column=1,padx=3,pady=2)
 
-delete_btn=tk.Button(btn_frame,bg="lightgrey",text="Delete",bd=7,font=("Arial",13),width=15,command=delete)
+delete_btn=tk.Button(btn_frame,bg="lightblue",text="Delete",bd=7,font=("TIMES NEW ROMAN",13),width=15,command=delete)
 delete_btn.grid(row=1,column=0,padx=2,pady=2)
 
-clear_btn=tk.Button(btn_frame,bg="lightgrey",text="Clear",bd=7,font=("Arial",13),width=15,command=clear)
+clear_btn=tk.Button(btn_frame,bg="lightblue",text="Clear",bd=7,font=("TIMES NEW ROMAN",13),width=15,command=clear)
 clear_btn.grid(row=1,column=1,padx=3,pady=2)
 
 #==========================
 
 #======== search ========9
-search_frame=tk.Frame(data_frame,bg="lightgrey",bd=10,relief=tk.GROOVE)
+search_frame=tk.Frame(data_frame,bg="lightblue",bd=10,relief=tk.GROOVE)
 search_frame.pack(side=tk.TOP,fill=tk.X)
 
-search_lbl=tk.Label(search_frame,text="Search ",bg="lightgrey",font=("Arial",14))
+search_lbl=tk.Label(search_frame,text="Search ",bg="lightblue",font=("Arial",14))
 search_lbl.grid(row=0,column=0,padx=2,pady=2)
 
 search_in=ttk.Combobox(search_frame,font=("Arial",14),state="readonly",textvariable=search_by)
 search_in['values']=("Name","Roll No","Contact","Father's","Class","Section","DOB")
 search_in.grid(row=0,column=1,padx=12,pady=2)
 
-search_btn=tk.Button(search_frame,text="Search",font=("Arial",13),bd=9,width=14,bg="lightgrey")
+search_btn=tk.Button(search_frame,text="Search",font=("Arial",13),bd=9,width=14,bg="white")
 search_btn.grid(row=0,column=2,padx=12,pady=2)
 
-showall_btn=tk.Button(search_frame,text="Show All",font=("Arial",13),bd=9,width=14,bg="lightgrey")
+showall_btn=tk.Button(search_frame,text="Show All",font=("Arial",13),bd=9,width=14,bg="white")
 showall_btn.grid(row=0,column=3,padx=12,pady=2)
 
 #=======================
